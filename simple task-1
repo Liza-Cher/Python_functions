@@ -1,0 +1,4 @@
+def greet(* names): # если неопределённое количество аргументов в функции, то ставим знак '*' перед кортежем
+  for item in names:
+    print(f"Hello, {item}!")
+greet("Una", "John", "Noi", "Liza", "Olya")
