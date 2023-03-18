@@ -1,0 +1,9 @@
+def f(x):
+    return x * x
+def modify_list(L, fn):
+    for idx, v in enumerate(L):
+        L[idx] = fn(v)
+
+L = [1, 4, 5]
+modify_list(L, f) # тут передаю в аргумент функции modify_list помимо списка L ещё и написанную выше функцию f, результат - изменённый список, где все значения в квадрате
+print(L)
